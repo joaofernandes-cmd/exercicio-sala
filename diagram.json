@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "author": "Lab 1 - Inteli",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r1", "top": -72, "left": 235, "rotate": 90, "attrs": { "value": "220" } },
+    { "type": "wokwi-led", "id": "led1", "top": -150, "left": 263, "attrs": { "color": "red" } },
+    { "type": "wokwi-buzzer", "id": "bz1", "top": -150, "left": 340, "attrs": { "volume": "0.1" } }
+  ],
+  "connections": [
+    [ "uno:8", "r1:2", "green", [] ],
+    [ "r1:1", "led1:A", "green", [] ],
+    [ "led1:C", "uno:GND.1", "black", [] ],
+    [ "uno:9", "bz1:2", "blue", [] ],
+    [ "bz1:1", "uno:GND.1", "black", [] ]
+  ],
+  "dependencies": {}
+}

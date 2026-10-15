@@ -27,15 +27,15 @@ Atenção: delay() trava o Arduino. Para fazer outras coisas ao mesmo tempo, use
 
 ## 4. Construir
 - **Wokwi:** https://wokwi.com/projects/477972015771641857
-- **Repositório / commit:** —
+- **Repositório / commit:** https://github.com/joaofernandes-cmd/exercicio-sala
 - **Ciclo medido:** 2 s
 - **Corrente calculada com 220 Ω:** 13.6 mA
 - **Projeto funcionando:** sim
 
 ## 5. Comprovar (sem IA)
-1. **Corrente com 330 Ω:** — mA — cálculo: —
-2. **Resistor de 0 Ω:** — — —
-3. **LED no pino 12:** —
-4. **TEMPO_APAGADO para 500 ms a cada 3 s:** — ms
+1. **Corrente com 330 Ω:** 9.09 mA — cálculo: I = (5 - 2) / 330 ≈ 9.09 mA
+2. **Resistor de 0 Ω:** Porque nada limita a corrente, que passa muito do máximo suportado pelo LED. — Sem o resistor nada limita a corrente, ocasionando um sobreaquecimento.
+3. **LED no pino 12:** É preciso trocar cada ocorrência de 8 no código.
+4. **TEMPO_APAGADO para 500 ms a cada 3 s:** 1500 ms
 
-Declaro que respondi a etapa Comprovar sem IA: não
+Declaro que respondi a etapa Comprovar sem IA: sim
